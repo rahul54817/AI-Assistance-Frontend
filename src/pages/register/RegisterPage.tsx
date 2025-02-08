@@ -26,7 +26,7 @@ const RegisterPage = () => {
         confirmPassword : values.confirmPassword
       });
       message.success(response.data.message || 'Registration successful!');
-      navigate('/')
+      navigate('/register')
       
     } catch (error : any) {
       message.error(error.response?.data?.message || 'Registration failed!');
